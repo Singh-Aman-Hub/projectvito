@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Devices</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold text-blue-700"><a href="index.html">VITO</a></h1>
+            <nav class="ml-10 space-x-4">
+                <a class="text-gray-600 hover:text-blue-700" href="index.html">Home</a>
+                <a class="text-gray-600 hover:text-blue-700" href="symptoms.html">Symptoms</a>
+                <a class="text-gray-600 hover:text-blue-700" href="healthcare.html">Healthcare Devices</a>
+                <a class="text-gray-600 hover:text-blue-700" href="about-us.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Healthcare and Medicine Devices</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Product Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="https://m.media-amazon.com/images/I/81eIfnfHiIL.jpg" alt="Blood Pressure Monitor" id ="device" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Blood Pressure Monitor</h3>
+                <p class="text-gray-600 mb-4">Monitor your blood pressure easily at home with our reliable device.</p>
+                <p class="text-lg font-bold text-blue-600">₹1000.00</p>
+                <button class="bg-teal-500 text-white px-4 py-2 rounded mt-4 hover:bg-teal-600">Buy Now</button>
+            </div>
+            <!-- Product Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="https://5.imimg.com/data5/GN/GY/EJ/SELLER-66931108/manual-blood-pressure-machine-500x500.jpg" alt="Glucometer" id ="device"class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Glucometer</h3>
+                <p class="text-gray-600 mb-4">Keep track of your blood sugar levels with our accurate glucometer.</p>
+                <p class="text-lg font-bold text-blue-600">₹800.00</p>
+                <button class="bg-teal-500 text-white px-4 py-2 rounded mt-4 hover:bg-teal-600">Buy Now</button>
+            </div>
+            <!-- Product Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="https://drtrust.in/cdn/shop/files/30802567528494_700x700.jpg?v=1703333960" alt="Thermometer" id ="device"  class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Thermometer</h3>
+                <p class="text-gray-600 mb-4">Get quick and accurate temperature readings with our digital thermometer.</p>
+                <p class="text-lg font-bold text-blue-600">₹700.00</p>
+                <button class="bg-teal-500 text-white px-4 py-2 rounded mt-4 hover:bg-teal-600">Buy Now</button>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </main>
+
+    <footer class="bg-white shadow-md mt-12">
+        <div class="container mx-auto py-4 text-center">
+            <p class="text-gray-600">&copy; 2024 VITO. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

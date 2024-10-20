@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    color: #1D4ED8;
+}
+
+button {
+    border-radius: 9999px;
+}
+
+.bg-teal-500 {
+    background-color: #14B8A6;
+}
+
+.bg-blue-700 {
+    background-color: #1D4ED8;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.doctor-card img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.doctor-card h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.doctor-card p {
+    color: #4B5563;
+}
+
+.doctor-card button {
+    border: 1px solid #1D4ED8;
+    color: #1D4ED8;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: scale(1.05);
+}
+
+#doctors-section {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+#doctors-section.fade-in {
+    opacity: 1;
+}
+.text-center{
+    margin-right: 10px;
+}
+#links:hover{
+  color: #1D4ED8;
+}

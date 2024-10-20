@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptoms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold text-blue-700" ><a href="index.html">VITO</a></h1>
+            <nav class="ml-10 space-x-4">
+                <a class="text-gray-600 hover:text-blue-700" href="index.html">Home</a>
+                <a class="text-gray-600 hover:text-blue-700" href="healthcare.html">Medicines & Health Devices</a>
+                <a class="text-gray-600 hover:text-blue-700" href="symptom.html">Symptoms</a>
+                <a class="text-gray-600 hover:text-blue-700" href="about-us.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Symptoms Form -->
+    <main class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Enter Your Symptoms</h2>
+        <div class="bg-white p-8 rounded-lg shadow-lg mx-auto max-w-lg animate-slide-in">
+            <form action="#" method="POST">
+                <!-- Name -->
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- Age -->
+                <div class="mb-4">
+                    <label for="age" class="block text-gray-700 font-bold mb-2">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- Gender -->
+                <div class="mb-4">
+                    <label for="gender" class="block text-gray-700 font-bold mb-2">Gender:</label>
+                    <select id="gender" name="gender" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <!-- Symptoms -->
+                <div class="mb-4">
+                    <label for="symptoms" class="block text-gray-700 font-bold mb-2">Symptoms:</label>
+                    <textarea id="symptoms" name="symptoms" placeholder="Describe your symptoms" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <!-- New Fields -->
+                <!-- Past Medical History -->
+                <div class="mb-4">
+                    <label for="history" class="block text-gray-700 font-bold mb-2">Past Medical History:</label>
+                    <textarea id="history" name="history" placeholder="Describe your past medical history" rows="2" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <!-- Same Symptoms in Household -->
+                <div class="mb-4">
+                    <label for="household_symptoms" class="block text-gray-700 font-bold mb-2">Same Symptoms in Household:</label>
+                    <select id="household_symptoms" name="household_symptoms" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <!-- Allergies -->
+                <div class="mb-4">
+                    <label for="allergies" class="block text-gray-700 font-bold mb-2">Allergies (Food/Medicines):</label>
+                    <input type="text" id="allergies" name="allergies" placeholder="Enter any allergies" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- Symptoms Duration -->
+                <div class="mb-4">
+                    <label for="duration" class="block text-gray-700 font-bold mb-2">How Many Days of Symptoms:</label>
+                    <input type="number" id="duration" name="duration" placeholder="Number of days" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- Last Food Before Symptoms -->
+                <div class="mb-4">
+                    <label for="last_food" class="block text-gray-700 font-bold mb-2">Last Food Before Symptoms:</label>
+                    <input type="text" id="last_food" name="last_food" placeholder="What food did you eat before symptoms started?" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- BP Level -->
+                <div class="mb-4">
+                    <label for="bp_level" class="block text-gray-700 font-bold mb-2">Blood Pressure Level:</label>
+                    <input type="text" id="bp_level" name="bp_level" placeholder="Enter your BP level" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- Sugar Level -->
+                <div class="mb-4">
+                    <label for="sugar_level" class="block text-gray-700 font-bold mb-2">Sugar Level:</label>
+                    <input type="text" id="sugar_level" name="sugar_level" placeholder="Enter your sugar level" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- How Did Contact with Disease Occur -->
+                <div class="mb-4">
+                    <label for="disease_contact" class="block text-gray-700 font-bold mb-2">How Did You Come in Contact with Disease:</label>
+                    <textarea id="disease_contact" name="disease_contact" placeholder="Describe how you think you got the disease" rows="2" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <!-- Medico Devices at Home -->
+                <div class="mb-4">
+                    <label for="medico_devices" class="block text-gray-700 font-bold mb-2">Available Medico Devices at Home:</label>
+                    <input type="text" id="medico_devices" name="medico_devices" placeholder="List devices like BP monitor, glucometer, etc." class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- Past Consultation with Doctor -->
+                <div class="mb-4">
+                    <label for="past_consult" class="block text-gray-700 font-bold mb-2">Past Consultation with Doctor (and Reason):</label>
+                    <textarea id="past_consult" name="past_consult" placeholder="Describe the reason for past consultations" rows="2" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="bg-teal-500 text-white px-6 py-2 rounded-full hover:bg-teal-600 transition-all">Submit Symptoms</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="js2.js"></script>
+</body>
+</html>

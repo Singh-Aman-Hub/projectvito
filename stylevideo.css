@@ -1,0 +1,21 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+}
